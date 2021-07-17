@@ -9,6 +9,7 @@ Building
 
 Test lambda
 
+```
 const filters = require('filter');
 
 const fs = require('fs');
@@ -43,9 +44,10 @@ exports.handler = async (event) => {
     };
     return response;
 };
-
+```
 Current test output
 
+```
 START RequestId: 08aa1c18-a89f-437b-a550-9373780a80a4 Version: $LATEST
 2021-07-17T16:56:25.407Z	08aa1c18-a89f-437b-a550-9373780a80a4	INFO	[
   '/opt/nodejs/node_modules/filter/filters.js',
@@ -58,3 +60,4 @@ START RequestId: 08aa1c18-a89f-437b-a550-9373780a80a4 Version: $LATEST
 2021-07-17T16:56:25.408Z	08aa1c18-a89f-437b-a550-9373780a80a4	INFO	true
 END RequestId: 08aa1c18-a89f-437b-a550-9373780a80a4
 REPORT RequestId: 08aa1c18-a89f-437b-a550-9373780a80a4	Duration: 61.25 ms	Billed Duration: 62 ms	Memory Size: 128 MB	Max Memory Used: 65 MB	Init Duration: 153.51 ms
+```
