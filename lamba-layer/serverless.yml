@@ -1,0 +1,12 @@
+service: filterSvc
+
+provider:
+  name: aws
+
+layers:
+  filters:
+    path: layer
+    compatibleRuntimes:
+      - nodejs14.x
+      - nodejs12.x
+      - nodejs10.x
