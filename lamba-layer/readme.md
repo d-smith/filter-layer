@@ -61,3 +61,8 @@ START RequestId: 08aa1c18-a89f-437b-a550-9373780a80a4 Version: $LATEST
 END RequestId: 08aa1c18-a89f-437b-a550-9373780a80a4
 REPORT RequestId: 08aa1c18-a89f-437b-a550-9373780a80a4	Duration: 61.25 ms	Billed Duration: 62 ms	Memory Size: 128 MB	Max Memory Used: 65 MB	Init Duration: 153.51 ms
 ```
+
+```
+aws sns publish --topic-arn arn:aws:sns:us-east-1:$ACCOUNT_NO:FilterMe \
+--message {}
+```

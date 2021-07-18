@@ -2,6 +2,15 @@ service: filterSvc
 
 provider:
   name: aws
+  runtime: nodejs14.x
+
+functions:
+  dispatcher:
+    handler: handler.handle
+    events:
+      - sns:
+          arn: !Ref SampleTopic
+          topicName: FilterMe
 
 layers:
   filters:
@@ -10,3 +19,10 @@ layers:
       - nodejs14.x
       - nodejs12.x
       - nodejs10.x
+
+resources:
+  Resources:
+    SampleTopic:
+      Type: AWS::SNS::Topic
+      Properties:
+        TopicName: FilterMe
