@@ -7,13 +7,15 @@ provider:
 functions:
   dispatcher:
     handler: handler.handle
+    layers:
+      - { Ref: FiltersLambdaLayer}
     events:
       - sns:
           arn: !Ref SampleTopic
           topicName: FilterMe
 
 layers:
-  filters:
+  Filters:
     path: layer
     compatibleRuntimes:
       - nodejs14.x

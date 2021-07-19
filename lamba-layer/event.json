@@ -1,0 +1,22 @@
+{
+    "Records": [
+        {
+            "EventSource": "aws:sns",
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "arn:aws:sns:us-east-1:012301230123:FilterMe:ca30e86a-f97d-440c-a945-85d9d56a61f0",
+            "Sns": {
+                "Type": "Notification",
+                "MessageId": "ecbd395c-514b-502d-9c23-60322db3878e",
+                "TopicArn": "arn:aws:sns:us-east-1:012301230123:FilterMe",
+                "Subject": null,
+                "Message": "{\"foo\": true, \"foostuff\":\"xxx\"}",
+                "Timestamp": "2021-07-18T19:02:16.517Z",
+                "SignatureVersion": "1",
+                "Signature": "uLCJr85LZz9BeNNj7oq/LSJ27bFLyfJN0eW+GL6h8nb8wW7yXBGZY9iL2pfbj+zuRPWsQHBVdcti0H32cLxLZg4lVYuyMa/Ax8GINr3rURHcxDH4sDpSznxQC+hlOdMMvzENgRVNLqBxsEx8X1VnjPYOlOJl/V7AwsALwpeTMsGqDkxjJxiCFCFuC/KUmSJfZusgTVjg2IhnVQevCLJdcuChL2AVREj0EyxJybmHy5UcK66W8zbM4A4tOhw2mJyv2njLxxuWz4BYW5TKiV/cskpZl0eSPkmbC31qZyV5LYPFwdwuufweYDscJXA6Fncu9qeSpzB/6rkeCumWWWj0Hw==",
+                "SigningCertUrl": "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-010a507c1833636cd94bdb98bd93083a.pem",
+                "UnsubscribeUrl": "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:012301230123:FilterMe:ca30e86a-f97d-440c-a945-85d9d56a61f0",
+                "MessageAttributes": {}
+            }
+        }
+    ]
+}
